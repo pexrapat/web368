@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รุ่นที่ 29</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ECEFF1;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 24px;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #f0f0f0;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            font-size: 16px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #777;
+        }
+
+        .container {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .member-card {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .member-card:hover {
+            background-color: #6699db;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-photo {
+            width: 120px; /* ปรับขนาดให้พอดีกับเนื้อหา */
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        .member-position {
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .member-card {
+                width: 100%; 
+            }
+
+            .member-name {
+                font-size: 16px;
+            }
+
+            .member-position {
+                font-size: 12px;
+            }
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #f9f9f9;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">รุ่นที่ 29</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับการศึกษา</a></li>
+                <li class="nav-item"><a class="nav-link" href="staff.html">บุคลากร</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">ข่าวและกิจกรรม</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อ</a></li>
+                <li class="nav-item"><a class="nav-link" href="web.html">ทำเนียบรุ่น</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">ค้นหา</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>สมาชิกรุ่นที่ 29</h1>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมชาย ใจดี" class="member-photo">
+                    <div class="member-name">xxX asdsa</div>
+                    <div class="member-position">dsadsf</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมหญิง จริงใจ" class="member-photo">
+                    <div class="member-name">asdsfg asfadf</div>
+                    <div class="member-position">dsadg</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมนึก นึกดี" class="member-photo">
+                    <div class="member-name">adwerf wadad</div>
+                    <div class="member-position">asdggv</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">asda wada d</div>
+                    <div class="member-position">asdas</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="xas sdad" class="member-photo">
+                    <div class="member-name">asdsaf eeeeawd</div>
+                    <div class="member-position">asdd</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="asdas daf" class="member-photo">
+                    <div class="member-name">asdas awdad</div>
+                    <div class="member-position">awdasf</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">asdacd das dsa</div>
+                    <div class="member-position">asdasda</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">zxcxc adwfa</div>
+                    <div class="member-position">asdf</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">asdew fevfe</div>
+                    <div class="member-position">asdasd</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">asdgfb df d</div>
+                    <div class="member-position">asdgrv</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">dasgfsb sdfdsvsd</div>
+                    <div class="member-position">asdsaf</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="pro.html" class="member-card">
+                    <img src="spiwer.js/ss.jpg" alt="สมปอง ปองดี" class="member-photo">
+                    <div class="member-name">asdf grgrw</div>
+                    <div class="member-position">asggvds</div>
+                </a>
+            </div>
+        </div>   
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 เว็บไซต์ทำเนียบรุ่น. สงวนลิขสิทธิ์.</p>
+        <p><a href="#">เงื่อนไขการใช้งาน</a> | <a href="#">นโยบายความเป็นส่วนตัว</a> | <a href="#">ติดต่อเรา</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
